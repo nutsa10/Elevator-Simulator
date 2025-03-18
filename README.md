@@ -8,7 +8,7 @@
 
 ## ⚙️ Setup 
 * 1️⃣ Clone the repository: dotnet restore
-* 3️⃣ Run the application : dotnet run --project src/Application/ElevatorSimulation.Application
+* 3️⃣ Run the application : dotnet run --project src/Presentation/ElevatorSimulation.App
 * 4️⃣ Run tests : dotnet test
 
 
