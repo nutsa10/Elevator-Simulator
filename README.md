@@ -7,7 +7,7 @@
 
 
 ## ⚙️ Setup 
-* 1️⃣ Clone the repository
+* 1️⃣ Restore nuget packages
 ```
   dotnet restore
 ```
