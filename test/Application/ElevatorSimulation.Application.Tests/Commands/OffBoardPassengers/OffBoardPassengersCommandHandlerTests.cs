@@ -1,6 +1,7 @@
 ﻿using ElevatorSimulation.Application.Commands.OffBoardPassengers;
 using ElevatorSimulation.Application.Interfaces.Repositories;
 using ElevatorSimulation.Application.Models;
+using ElevatorSimulation.Domain.Constants;
 using ElevatorSimulation.Domain.Enums;
 using Moq;
 
@@ -22,10 +23,10 @@ public class OffBoardPassengersCommandHandlerTests
     {
         // Arrange
         var elevator = new Elevator(1, 20, ElevatorType.Passenger) { PassengerCount = 5 };
-        var request = new OffBoardPassengersCommand { Elevator = elevator, NumOfPassengers = 3 };
+        var command = new OffBoardPassengersCommand { Elevator = elevator, NumOfPassengers = 3 };
 
         // Act
-        await _handler.Handle(request, CancellationToken.None);
+        await _handler.Handle(command, CancellationToken.None);
 
         // Assert
         Assert.Equal(8, elevator.PassengerCount); // Check if PassengerCount is updated correctly
@@ -37,15 +38,15 @@ public class OffBoardPassengersCommandHandlerTests
     {
         // Arrange
         var elevator = new Elevator(1, 20, ElevatorType.Passenger) { PassengerCount = 5 };
-        var request = new OffBoardPassengersCommand { Elevator = elevator, NumOfPassengers = 3 };
+        var command = new OffBoardPassengersCommand { Elevator = elevator, NumOfPassengers = 3 };
 
         var consoleOutput = new StringWriter();
         Console.SetOut(consoleOutput);
 
         // Act
-        await _handler.Handle(request, CancellationToken.None);
+        await _handler.Handle(command, CancellationToken.None);
 
         // Assert
-        Assert.Contains("3 passengers Off-boarded the elevator.", consoleOutput.ToString()); // Verify the correct message is printed
+        Assert.Contains(ElevatorConstants.Messages.PassengersOffBoardedElevator(command.NumOfPassengers), consoleOutput.ToString()); // Verify the correct message is printed
     }
 }

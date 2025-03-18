@@ -1,6 +1,7 @@
 ﻿using ElevatorSimulation.Application.Commands.OnBoardPassengers;
 using ElevatorSimulation.Application.Interfaces.Repositories;
 using ElevatorSimulation.Application.Models;
+using ElevatorSimulation.Domain.Constants;
 using ElevatorSimulation.Domain.Enums;
 using Moq;
 
@@ -54,6 +55,6 @@ public class OnBoardPassengersCommandHandlerTests
         await _handler.Handle(command, CancellationToken.None);
 
         // Assert
-        Assert.Contains("3 passengers boarded the elevator.", consoleOutput.ToString());
+        Assert.Contains(ElevatorConstants.Messages.PassengersBoardedElevator(command.NumOfPassengers), consoleOutput.ToString());
     }
 }
