@@ -8,12 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{21D10166-DBBB-4796-BD06-7E5B41875A93}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenstation", "Presenstation", "{5E68CA6D-FBB1-479F-B0F9-D42896029966}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5E68CA6D-FBB1-479F-B0F9-D42896029966}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C12BE41A-B6DD-473E-B731-755B17C6CE62}"
-	ProjectSection(SolutionItems) = preProject
-		SequentialTestCollection.cs = SequentialTestCollection.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{1AAAEBB6-39C2-4561-9288-39DF8FE287F6}"
 EndProject
