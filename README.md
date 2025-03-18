@@ -1,8 +1,8 @@
 # Elevator-Simulator
 
 ## 🛠️ Technologies Used
-* .NET 8 – Latest .NET version for high performance
-*  MediatR – Implements the mediator pattern for clean communication 
+* .NET 8 – Latest LTS .NET version
+*  MediatR 
 *  xUnit – Unit testing framework
 
 
