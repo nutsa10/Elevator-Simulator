@@ -6,7 +6,7 @@ MediatR – Implements the mediator pattern for clean communication <br />
 xUnit – Unit testing framework <br />
 
 
-## ⚙️ Installation & Setup <br />
+## ⚙️ Installation & Setup 
 * 1️⃣ Clone the repository: dotnet restore
 * 3️⃣ Run the application : dotnet run --project ElevatorSimulation.App
 * 4️⃣ Run tests : dotnet test
