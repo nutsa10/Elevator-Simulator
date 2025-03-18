@@ -7,11 +7,8 @@ xUnit – Unit testing framework <br />
 
 
 ## ⚙️ Installation & Setup <br />
-1️⃣ Clone the repository <br />
-dotnet restore <br />
-3️⃣ Run the application <br />
-dotnet run --project FlightSimulator.Presentation <br />
-4️⃣ Run tests <br />
-dotnet test <br />
+1️⃣ Clone the repository: dotnet restore
+3️⃣ Run the application : dotnet run --project ElevatorSimulation.App
+4️⃣ Run tests : dotnet test
 
 
